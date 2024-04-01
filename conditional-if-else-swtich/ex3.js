@@ -1,4 +1,4 @@
-//Exercise 3 - Utilizing if, else;
+//Exercise 3 - Using if, else;
 
 const read = require('readline-sync');
 

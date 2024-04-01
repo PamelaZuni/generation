@@ -1,4 +1,4 @@
-//Exercise 1 utilizing Conditional Statement if
+//Exercise 1 using Conditional Statement if
 
 const read = require('readline-sync');
 

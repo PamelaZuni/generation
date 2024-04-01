@@ -1,4 +1,4 @@
-//Exercise 4 utilizing Switch Case
+//Exercise 4 using Switch Case
 
 const read = require('readline-sync');
 
