@@ -37,11 +37,18 @@ values ("Orym", 5000, "lizard skin", 1800, 1),
        ("Dolgil", 3500, "metal", 2000, 3),
        ("Cornaith", 9000, "sunlight", 6000, 4),
 	   ("Aria", 10000, "moonlight", 7000, 5),
-	   ("Thorn", 11000, "silver", 5000, 6),
-       ("Zephyr", 2200, "heights", 900, 7),
-       ("Lilith", 1900, "holy magic", 600, 8);
+	   ("Thorn", 11000, "silver", 5000, 3),
+       ("Zephyr", 2200, "heights", 900, 2),
+       ("Lilith", 1900, "holy magic", 600, 1);
        
-	
+       select * from tb_class;
+
+
+
+       
+	select * from tb_characters;
+    
+    
 
 select * from tb_characters where atack > 2000;
 
@@ -50,9 +57,9 @@ select * from tb_characters where defense between 1000 and 2000;
 select * from tb_characters where characterName like "%c%";
 
 select characterName, atack, weekness, defense, tb_class.hybrid, tb_class.mystical
-from tb_characters inner join tb_class on tb_characters.ClasseId = tb_class.id;
+from tb_characters inner join tb_class on tb_characters.classeid = tb_class.id;
 
 select characterName, atack, weekness, defense, tb_class.hybrid, tb_class.mystical
-from tb_class inner join tb_characters on tb_characters.ClasseId = tb_class.Id
-where characterName = "warrior";
+from tb_class inner join tb_characters on tb_characters.classeid = tb_class.Id
+where hybrid = "warrior";
 
